@@ -9,7 +9,7 @@ const API_KEY = process.env.API_KEY
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   //defaultNetwork: "hardhat",
-  solidity: "0.8.27",
+  solidity: "0.8.28",
   networks:{
     sepolia:{
       url: URL,
