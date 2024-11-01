@@ -1,7 +1,7 @@
 const DECIMAL = 8
 const ETH_PRICE = 200000000000
 const DEV_CHAINS = ["hardhat", "local"]
-const LOCK_TIME = 180
+const LOCK_TIME = 9
 const CONFIRM_NUM = 1
 const NETWORK_CONFIG = {
     11155111: {

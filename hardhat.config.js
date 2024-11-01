@@ -2,7 +2,9 @@ require("@nomicfoundation/hardhat-toolbox");
 require("@chainlink/env-enc").config()
 require("@nomicfoundation/hardhat-verify");
 require("./tasks/index")
-require("hardhat-deploy")
+require("@nomicfoundation/hardhat-ethers");
+require("hardhat-deploy");
+require("hardhat-deploy-ethers");
 
 const URL = process.env.SEPOLIA_URL
 const PRIVATE_KEY = process.env.PRIVATE_KEY
@@ -31,6 +33,9 @@ module.exports = {
         secondAccount: {
             default: 1
         }
+    },
+    gasReporter: {
+        enabled: true
     }
     /*  sourcify: {
         // Disabled by default
